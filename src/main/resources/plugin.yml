@@ -1,0 +1,4 @@
+name: MCSMigrationManager
+version: 1.0.0
+main: com.gradyn.McsMigrationManager.McsMigrationManager
+api-version: 1.19
