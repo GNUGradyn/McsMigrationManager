@@ -32,11 +32,11 @@ public class UserCache {
         Username = username;
     }
 
-    public bool getTransfered() {
+    public Boolean getTransfered() {
         return Transfered;
     }
 
-    public void setTransfered(bool transfered) {
+    public void setTransfered(Boolean transfered) {
         Transfered = transfered;
     }
 }
