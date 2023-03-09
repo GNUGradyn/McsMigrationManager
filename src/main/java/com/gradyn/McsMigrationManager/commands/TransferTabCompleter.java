@@ -15,6 +15,9 @@ public class TransferTabCompleter implements TabCompleter {
             if (args[0].length() == 0) return new ArrayList<String>();
             return PlotMigrator.UsernameSearch(args[0]);
         }
-        return null;
+        if (args.length == 2) {
+            return null;
+        }
+        return new ArrayList<String>();
     }
 }

@@ -14,16 +14,17 @@ public class CommandTransfer implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         if (args.length != 2) return false;
 
-        UUID newGuid = Bukkit.getOfflinePlayer(args[0]).getUniqueId();
-        UUID oldGuid = PlotMigrator.GetPsudoUUID(args[1]);
+        UUID oldGuid = PlotMigrator.GetPsudoUUID(args[0]);
+        UUID newGuid = Bukkit.getOfflinePlayer(args[1]).getUniqueId();
         if (oldGuid == null) {
             sender.sendMessage("Historical user not found");
             return true;
         }
 
-        PlotMigrator.MigratePlots(oldGuid, newGuid);
+        var success = PlotMigrator.MigratePlots(oldGuid, newGuid);
 
-        sender.sendMessage("Migration successful");
+        if (success) sender.sendMessage("Migration successful");
+        else sender.sendMessage("Migration failed. See console for details");
         return true;
     }
 }

@@ -1,6 +1,7 @@
 package com.gradyn.McsMigrationManager;
 
 import com.gradyn.McsMigrationManager.Data.DbFactory;
+import com.gradyn.McsMigrationManager.Data.Models.Plot;
 import com.gradyn.McsMigrationManager.Data.Models.UserCache;
 import org.hibernate.Session;
 
@@ -74,7 +75,16 @@ public class PlotMigrator {
             var entry = results.get(results.size() - 1);
 
             entry.setTransfered(true);
-            entry.setUUID(destination);
+
+            var builder2 = session.getCriteriaBuilder();
+            var query2 = builder2.createQuery(Plot.class);
+            var root2 = query2.from(Plot.class);
+
+            query2.where(builder2.equal(root.get("Owner"), original));
+
+            var results2 = session.createQuery(query).getResultList();
+
+            results2.forEach(x -> x.setUUID(destination));
 
             transaction.commit();
             return true;
