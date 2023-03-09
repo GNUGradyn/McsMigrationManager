@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="work on plot migration service">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/commands/CommandTransfer.java" afterDir="false" />
+    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="add transfer command">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/commands/TransferTabCompleter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/McsMigrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/McsMigrationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/PlotMigrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/PlotMigrator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +48,29 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Gradyn Wursten/code/nebulous",
+    "last_opened_file_path": "C:/Users/Gradyn Wursten/code/PlotSquared",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
+      <module name="McsMigrationManager" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -105,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678399196475</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add transfer command">
+      <created>1678399741189</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678399741189</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -115,6 +139,18 @@
     <MESSAGE value="fix getter/setter for transferred property of user cache model" />
     <MESSAGE value="add default config.yml" />
     <MESSAGE value="work on plot migration service" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on plot migration service" />
+    <MESSAGE value="add transfer command" />
+    <option name="LAST_COMMIT_MESSAGE" value="add transfer command" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/PlotMigrator.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

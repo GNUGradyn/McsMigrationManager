@@ -1,6 +1,7 @@
 package com.gradyn.McsMigrationManager;
 
 import com.gradyn.McsMigrationManager.commands.CommandTransfer;
+import com.gradyn.McsMigrationManager.commands.TransferTabCompleter;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -11,6 +12,7 @@ public class McsMigrationManager extends JavaPlugin {
         loadConfig();
         getLogger().info("Starting MCS Migration Manager");
         getCommand("transfer").setExecutor(new CommandTransfer());
+        getCommand("transfer").setTabCompleter(new TransferTabCompleter());
     }
     @Override
     public void onDisable() {
