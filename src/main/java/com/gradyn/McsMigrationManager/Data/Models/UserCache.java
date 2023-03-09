@@ -13,6 +13,9 @@ public class UserCache {
     @Column(name="username")
     private String Username;
 
+    @Column(name="Transfered")
+    private Boolean Transfered;
+
     public java.util.UUID getUUID() {
         return UUID;
     }
@@ -27,5 +30,13 @@ public class UserCache {
 
     public void setUsername(String username) {
         Username = username;
+    }
+
+    public bool getTransfered() {
+        return Transfered;
+    }
+
+    public void setTransfered(bool transfered) {
+        Transfered = transfered;
     }
 }
