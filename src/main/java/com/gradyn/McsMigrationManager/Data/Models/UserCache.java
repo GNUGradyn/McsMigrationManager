@@ -2,6 +2,7 @@ package com.gradyn.McsMigrationManager.Data.Models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 import java.util.UUID;
@@ -9,6 +10,7 @@ import java.util.UUID;
 @Entity
 @Table(name="usercache")
 public class UserCache {
+    @Id
     @Column(name="uuid")
     private UUID UUID;
 
