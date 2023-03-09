@@ -2,3 +2,13 @@ name: MCSMigrationManager
 version: 1.0.0
 main: com.gradyn.McsMigrationManager.McsMigrationManager
 api-version: 1.19
+
+permissions:
+  mcsmgr.transfer:
+    description: Allows a user to transfer historical users to a real user.
+    default: op
+
+commands:
+  transfer:
+    description: Transfer a historical user to a real user
+    useage: "/nebulous (historical user) (real user)"

@@ -1,5 +1,6 @@
 package com.gradyn.McsMigrationManager;
 
+import com.gradyn.McsMigrationManager.commands.CommandTransfer;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -9,6 +10,7 @@ public class McsMigrationManager extends JavaPlugin {
     public void onEnable() {
         loadConfig();
         getLogger().info("Starting MCS Migration Manager");
+        getCommand("transfer").setExecutor(new CommandTransfer());
     }
     @Override
     public void onDisable() {
