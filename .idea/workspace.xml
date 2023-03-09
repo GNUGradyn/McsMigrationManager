@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="update database factory">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/Models/UserCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/Models/UserCache.java" afterDir="false" />
+    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="fix getter/setter for transferred property of user cache model">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Gradyn Wursten/code/PlotSquared",
+    "last_opened_file_path": "C:/Users/Gradyn Wursten/code/nebulous",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -81,13 +81,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678396392671</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix getter/setter for transferred property of user cache model">
+      <created>1678396441420</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678396441420</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inital commit" />
     <MESSAGE value="add hibernate models" />
     <MESSAGE value="update database factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="update database factory" />
+    <MESSAGE value="fix getter/setter for transferred property of user cache model" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix getter/setter for transferred property of user cache model" />
   </component>
 </project>
