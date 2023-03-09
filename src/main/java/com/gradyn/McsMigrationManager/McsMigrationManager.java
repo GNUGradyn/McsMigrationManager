@@ -1,5 +1,6 @@
 package com.gradyn.McsMigrationManager;
 
+import com.gradyn.McsMigrationManager.Data.DbFactory;
 import com.gradyn.McsMigrationManager.commands.CommandTransfer;
 import com.gradyn.McsMigrationManager.commands.TransferTabCompleter;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -11,6 +12,7 @@ public class McsMigrationManager extends JavaPlugin {
     public void onEnable() {
         loadConfig();
         getLogger().info("Starting MCS Migration Manager");
+        DbFactory.buildSessionFactory();
         getCommand("transfer").setExecutor(new CommandTransfer());
         getCommand("transfer").setTabCompleter(new TransferTabCompleter());
     }
