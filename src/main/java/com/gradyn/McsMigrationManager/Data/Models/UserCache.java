@@ -20,12 +20,12 @@ public class UserCache {
     @Column(name="Transfered")
     private Boolean Transfered;
 
-    public String getUUID() {
+    public String getRawUUID() {
         return this.UUID;
     }
 
     public UUID getUUID() {
-        java.util.UUID.fromString(this.UUID)
+        return java.util.UUID.fromString(getRawUUID());
     }
 
     public void setUUID(String UUID) {
