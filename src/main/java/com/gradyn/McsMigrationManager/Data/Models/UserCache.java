@@ -12,7 +12,7 @@ import java.util.UUID;
 public class UserCache {
     @Id
     @Column(name="uuid")
-    private UUID UUID;
+    private String UUID;
 
     @Column(name="username")
     private String Username;
@@ -20,12 +20,20 @@ public class UserCache {
     @Column(name="Transfered")
     private Boolean Transfered;
 
-    public java.util.UUID getUUID() {
-        return UUID;
+    public String getUUID() {
+        return this.UUID;
     }
 
-    public void setUUID(java.util.UUID UUID) {
+    public UUID getUUID() {
+        java.util.UUID.fromString(this.UUID)
+    }
+
+    public void setUUID(String UUID) {
         this.UUID = UUID;
+    }
+
+    public void setUUID(UUID uuid) {
+        setUsername(uuid.toString());
     }
 
     public String getUsername() {
