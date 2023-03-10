@@ -14,16 +14,15 @@ public class McsMigrationManager extends JavaPlugin {
         loadConfig();
         getLogger().info("Starting MCS Migration Manager");
         DbFactory.buildSessionFactory();
+        getServer().getPluginManager().registerEvents(new JoinEvent(), this);
         getCommand("transfer").setExecutor(new CommandTransfer());
         getCommand("transfer").setTabCompleter(new TransferTabCompleter());
+
     }
     @Override
     public void onDisable() {
         getLogger().info("Stopping MCS Migration Manager");
     }
-
-    @EventHandler
-
 
     private void loadConfig() {
         this.saveDefaultConfig();
