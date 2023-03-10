@@ -80,11 +80,11 @@ public class PlotMigrator {
             var query2 = builder2.createQuery(Plot.class);
             var root2 = query2.from(Plot.class);
 
-            query2.where(builder2.equal(root2.get("Owner"), original));
+            query2.where(builder2.equal(root2.get("Owner"), original.toString()));
 
-            var results2 = session.createQuery(query).getResultList();
+            var results2 = session.createQuery(query2).getResultList();
 
-            results2.forEach(x -> x.setUUID(destination));
+            results2.forEach(x -> x.setOwner(destination.toString()));
 
             transaction.commit();
             return true;

@@ -19,7 +19,7 @@ public class Plot {
     @Column(name="plot_id_z")
     private int PlotIdZ;
     @Column(name="owner")
-    private UUID Owner;
+    private String Owner;
     @Column(name="world")
     private String world;
     @Column(name="timestamp")
@@ -49,11 +49,11 @@ public class Plot {
         PlotIdZ = plotIdZ;
     }
 
-    public UUID getOwner() {
+    public String getOwner() {
         return Owner;
     }
 
-    public void setOwner(UUID owner) {
+    public void setOwner(String owner) {
         Owner = owner;
     }
 
