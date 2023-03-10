@@ -62,7 +62,7 @@ public class PlotMigrator {
 
             query.where(builder.and(
                     builder.isFalse(root.get("Transfered")),
-                    builder.equal(root.get("UUID"), original)
+                    builder.equal(root.get("RawUUID"), original.toString())
             ));
 
             var results = session.createQuery(query).getResultList();
@@ -80,7 +80,7 @@ public class PlotMigrator {
             var query2 = builder2.createQuery(Plot.class);
             var root2 = query2.from(Plot.class);
 
-            query2.where(builder2.equal(root.get("Owner"), original));
+            query2.where(builder2.equal(root2.get("Owner"), original));
 
             var results2 = session.createQuery(query).getResultList();
 
