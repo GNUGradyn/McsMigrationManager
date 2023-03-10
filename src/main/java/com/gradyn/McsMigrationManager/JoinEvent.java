@@ -12,7 +12,9 @@ public class JoinEvent implements Listener {
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
         UUID psudoUuid = PlotMigrator.GetPsudoUUID(player.getName());
-        if (psudoUuid != null) PlotMigrator.MigratePlots(psudoUuid, player.getUniqueId());
-        player.sendMessage("Your plots have been auto migrated :)");
+        if (psudoUuid != null) {
+            PlotMigrator.MigratePlots(psudoUuid, player.getUniqueId());
+            player.sendMessage("Your plots have been auto migrated :)");
+        }
     }
 }

@@ -1,7 +1,9 @@
 package com.gradyn.McsMigrationManager;
 
 import com.gradyn.McsMigrationManager.Data.DbFactory;
+import com.gradyn.McsMigrationManager.commands.CommandAcceptRules;
 import com.gradyn.McsMigrationManager.commands.CommandTransfer;
+import com.gradyn.McsMigrationManager.commands.EmptyTabCompleter;
 import com.gradyn.McsMigrationManager.commands.TransferTabCompleter;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
@@ -17,6 +19,8 @@ public class McsMigrationManager extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new JoinEvent(), this);
         getCommand("transfer").setExecutor(new CommandTransfer());
         getCommand("transfer").setTabCompleter(new TransferTabCompleter());
+        getCommand("acceptrules").setExecutor(new CommandAcceptRules());
+        getCommand("acceptrules").setTabCompleter(new EmptyTabCompleter());
 
     }
     @Override
