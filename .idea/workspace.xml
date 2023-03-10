@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="work">
+    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="finally finished transfer command">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/JoinEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/Models/Plot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/Models/Plot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/McsMigrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/McsMigrationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/PlotMigrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/PlotMigrator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678407734805</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="work">
+      <created>1678409824294</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678409824294</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -191,22 +200,7 @@
     <MESSAGE value="finish tab completer" />
     <MESSAGE value="progress" />
     <MESSAGE value="work" />
-    <option name="LAST_COMMIT_MESSAGE" value="work" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/PlotMigrator.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/DbFactory.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="finally finished transfer command" />
+    <option name="LAST_COMMIT_MESSAGE" value="finally finished transfer command" />
   </component>
 </project>

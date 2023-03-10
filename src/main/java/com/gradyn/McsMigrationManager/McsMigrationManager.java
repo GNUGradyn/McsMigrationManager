@@ -4,6 +4,7 @@ import com.gradyn.McsMigrationManager.Data.DbFactory;
 import com.gradyn.McsMigrationManager.commands.CommandTransfer;
 import com.gradyn.McsMigrationManager.commands.TransferTabCompleter;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.event.EventHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class McsMigrationManager extends JavaPlugin {
@@ -20,6 +21,9 @@ public class McsMigrationManager extends JavaPlugin {
     public void onDisable() {
         getLogger().info("Stopping MCS Migration Manager");
     }
+
+    @EventHandler
+
 
     private void loadConfig() {
         this.saveDefaultConfig();

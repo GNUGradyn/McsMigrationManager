@@ -16,10 +16,25 @@
 
     <repositories>
         <repository>
+            <id>papermc</id>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
+        </repository>
+        <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
     </repositories>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.intellectualsites.bom</groupId>
+                <artifactId>bom-1.18.x</artifactId>
+                <version>1.25</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
@@ -39,8 +54,12 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.0.8</version>
         </dependency>
+        <dependency>
+            <groupId>com.plotsquared</groupId>
+            <artifactId>PlotSquared-Core</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
-
     <packaging>jar</packaging>
     <build>
         <finalName>McsMigrationManager</finalName>

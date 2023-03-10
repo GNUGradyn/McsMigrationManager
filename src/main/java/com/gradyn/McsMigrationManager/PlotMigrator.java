@@ -3,6 +3,8 @@ package com.gradyn.McsMigrationManager;
 import com.gradyn.McsMigrationManager.Data.DbFactory;
 import com.gradyn.McsMigrationManager.Data.Models.Plot;
 import com.gradyn.McsMigrationManager.Data.Models.UserCache;
+import com.plotsquared.core.PlotSquared;
+import com.plotsquared.core.plot.PlotId;
 import org.hibernate.Session;
 
 import java.util.List;
@@ -53,6 +55,7 @@ public class PlotMigrator {
 
     public static boolean MigratePlots(UUID original, UUID destination) {
         try (Session session = DbFactory.getSessionFactory().openSession()) {
+            // step 1: Locate fake GUID
             var transaction = session.beginTransaction();
             var builder = session.getCriteriaBuilder();
             var query = builder.createQuery(UserCache.class);
@@ -74,8 +77,10 @@ public class PlotMigrator {
 
             var entry = results.get(results.size() - 1);
 
+            // Step 2: Mark user transferred
             entry.setTransfered(true);
 
+            // Step 3: Update database with real GUI and update PS ABS
             var builder2 = session.getCriteriaBuilder();
             var query2 = builder2.createQuery(Plot.class);
             var root2 = query2.from(Plot.class);
@@ -84,7 +89,11 @@ public class PlotMigrator {
 
             var results2 = session.createQuery(query2).getResultList();
 
-            results2.forEach(x -> x.setOwner(destination.toString()));
+            results2.forEach(x -> {
+                x.setOwner(destination.toString());
+                PlotSquared.get().getPlotAreaManager().getPlotAreasSet("world").iterator().next().getPlot(PlotId.of(x.getPlotIdX(), x.getPlotIdZ())).setOwner(destination);
+            });
+
 
             transaction.commit();
             return true;
