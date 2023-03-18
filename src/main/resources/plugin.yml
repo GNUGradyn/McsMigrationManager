@@ -10,6 +10,9 @@ permissions:
   mcsmgr.acceptrules:
     description: Allows a user to use /acceptrules
     default: false
+  mcsmgr.archive:
+    description: Allows a user to visit archived plots via /archive
+    default: false
 
 commands:
   transfer:
@@ -20,3 +23,7 @@ commands:
     description: Accept the rules and become a constructor
     usage: "/acceptrules"
     permission: mcsmgr.acceptrules
+  archive:
+    description: teleport to an archive plot
+    usage: "/archive (historical username)"
+    permission: mcsmgr.archive
