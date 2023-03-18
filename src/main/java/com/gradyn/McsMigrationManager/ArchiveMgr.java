@@ -1,6 +1,7 @@
 package com.gradyn.McsMigrationManager;
 
 import com.gradyn.McsMigrationManager.Data.DbFactory;
+import com.gradyn.McsMigrationManager.Data.Models.Archive;
 import org.hibernate.Session;
 
 public class ArchiveMgr {
@@ -15,7 +16,7 @@ public class ArchiveMgr {
 
             var results = session.createQuery(query).getResultStream();
 
-            return (Coordinate[]) results.map(x -> new Coordinate(x.getX(), x.getY(), x.getZ())).toArray();
+            return results.map(x -> new Coordinate(x.getX(), x.getY(), x.getZ())).toArray(Coordinate[]::new);
         }
     }
 }

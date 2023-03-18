@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="add untested command">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/McsMigrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/McsMigrationManager.java" afterDir="false" />
+    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="wwork">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/ArchiveMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/ArchiveMgr.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679171773302</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="wwork">
+      <created>1679172331532</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1679172331532</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -260,6 +268,7 @@
     <MESSAGE value="add annotated class" />
     <MESSAGE value="work on the archive service" />
     <MESSAGE value="add untested command" />
-    <option name="LAST_COMMIT_MESSAGE" value="add untested command" />
+    <MESSAGE value="wwork" />
+    <option name="LAST_COMMIT_MESSAGE" value="wwork" />
   </component>
 </project>
