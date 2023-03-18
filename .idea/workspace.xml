@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="ground work for archive command">
+    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="add annotated class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Archive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Coordinate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/commands/CommandArchive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/DbFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/DbFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/Models/Archive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/Models/Archive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679162676759</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add annotated class">
+      <created>1679162716326</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1679162716326</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -237,6 +248,7 @@
     <MESSAGE value="new command" />
     <MESSAGE value="fix acceptrules hopefully" />
     <MESSAGE value="ground work for archive command" />
-    <option name="LAST_COMMIT_MESSAGE" value="ground work for archive command" />
+    <MESSAGE value="add annotated class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add annotated class" />
   </component>
 </project>

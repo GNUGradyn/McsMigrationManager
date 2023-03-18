@@ -25,5 +25,5 @@ commands:
     permission: mcsmgr.acceptrules
   archive:
     description: teleport to an archive plot
-    usage: "/archive (historical username)"
+    usage: "/archive (historical username) [number]"
     permission: mcsmgr.archive

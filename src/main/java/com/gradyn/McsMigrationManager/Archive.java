@@ -1,0 +1,23 @@
+package com.gradyn.McsMigrationManager;
+
+import com.gradyn.McsMigrationManager.Data.DbFactory;
+import org.hibernate.Session;
+
+import java.util.Arrays;
+
+public class Archive {
+    public static Coordinate[] LocateByUsername(String username) {
+        try (Session session = DbFactory.getSessionFactory().openSession()) {
+            var builder = session.getCriteriaBuilder();
+            var query = builder.createQuery(com.gradyn.McsMigrationManager.Data.Models.Archive.class);
+            var root = query.from(com.gradyn.McsMigrationManager.Data.Models.Archive.class);
+
+            query.select(root);
+            query.where(builder.equal(root.get("Owner"), username));
+
+            var results = session.createQuery(query).getResultStream();
+
+            return (Coordinate[]) results.map(x -> new Coordinate(x.getX(), x.getY(), x.getZ())).toArray();
+        }
+    }
+}
