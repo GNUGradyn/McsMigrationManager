@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="work on the archive service">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Archive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/ArchiveMgr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/commands/CommandArchive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/commands/CommandArchive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="add untested command">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/McsMigrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/McsMigrationManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679171088014</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add untested command">
+      <created>1679171773302</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679171773302</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -255,6 +259,7 @@
     <MESSAGE value="ground work for archive command" />
     <MESSAGE value="add annotated class" />
     <MESSAGE value="work on the archive service" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on the archive service" />
+    <MESSAGE value="add untested command" />
+    <option name="LAST_COMMIT_MESSAGE" value="add untested command" />
   </component>
 </project>
