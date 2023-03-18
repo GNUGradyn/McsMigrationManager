@@ -3,9 +3,7 @@ package com.gradyn.McsMigrationManager;
 import com.gradyn.McsMigrationManager.Data.DbFactory;
 import org.hibernate.Session;
 
-import java.util.Arrays;
-
-public class Archive {
+public class ArchiveMgr {
     public static Coordinate[] LocateByUsername(String username) {
         try (Session session = DbFactory.getSessionFactory().openSession()) {
             var builder = session.getCriteriaBuilder();
