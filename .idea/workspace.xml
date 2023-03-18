@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="fix acceptrules hopefully">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/Models/Archive.java" afterDir="false" />
+    <list default="true" id="67765aaf-632d-4eed-940e-3eb49380c3c3" name="Changes" comment="ground work for archive command">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/DbFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gradyn/McsMigrationManager/Data/DbFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678473428045</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="ground work for archive command">
+      <created>1679162676759</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1679162676759</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -230,6 +236,7 @@
     <MESSAGE value="auto migrations" />
     <MESSAGE value="new command" />
     <MESSAGE value="fix acceptrules hopefully" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix acceptrules hopefully" />
+    <MESSAGE value="ground work for archive command" />
+    <option name="LAST_COMMIT_MESSAGE" value="ground work for archive command" />
   </component>
 </project>

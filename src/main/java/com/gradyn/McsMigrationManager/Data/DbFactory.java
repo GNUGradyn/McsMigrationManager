@@ -1,5 +1,6 @@
 package com.gradyn.McsMigrationManager.Data;
 
+import com.gradyn.McsMigrationManager.Data.Models.Archive;
 import com.gradyn.McsMigrationManager.Data.Models.Plot;
 import com.gradyn.McsMigrationManager.Data.Models.UserCache;
 import com.gradyn.McsMigrationManager.McsMigrationManager;
@@ -14,6 +15,7 @@ public class DbFactory {
         Configuration config = new Configuration();
         config.addAnnotatedClass(Plot.class);
         config.addAnnotatedClass(UserCache.class);
+        config.addAnnotatedClass(Archive.class);
         config.setProperty("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
         config.setProperty("hibernate.connection.url", McsMigrationManager.config.getString("database.url"));
         config.setProperty("hibernate.connection.username", McsMigrationManager.config.getString("database.username"));
