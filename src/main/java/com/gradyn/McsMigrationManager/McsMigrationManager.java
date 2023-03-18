@@ -19,6 +19,7 @@ public class McsMigrationManager extends JavaPlugin {
         getCommand("acceptrules").setExecutor(new CommandAcceptRules());
         getCommand("acceptrules").setTabCompleter(new EmptyTabCompleter());
         getCommand("archive").setExecutor(new CommandArchive());
+        getCommand("archive").setTabCompleter(new ArchiveTabCompleter());
     }
     @Override
     public void onDisable() {

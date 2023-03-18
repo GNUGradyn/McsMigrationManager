@@ -43,7 +43,7 @@ public class CommandArchive implements CommandExecutor {
 
         // Make sure the plot requested actually exists
         if (results.length < number) {
-            sender.sendMessage("User only has " + args[1] + " plots.");
+            sender.sendMessage("User only has " + results.length + " plots.");
             return true;
         }
 
