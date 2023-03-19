@@ -51,9 +51,9 @@ public class CommandArchive implements CommandExecutor {
         var player = (Player) sender;
         var location = new Location(
                 Bukkit.getWorld(McsMigrationManager.config.getString("archiveWorld")),
-                (results[number].getX()+64),
-                results[number].getY(),
-                results[number].getZ(),
+                (results[number - 1].getX()+64),
+                results[number - 1].getY(),
+                results[number - 1].getZ(),
                 0,
                 0
                 );
